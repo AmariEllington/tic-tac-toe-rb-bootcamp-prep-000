@@ -134,13 +134,15 @@ end
 
 # Define your play method below
 def play
-  until over?
+  until over? == true
     turn
   end
-  if won?
+
+   if won?
     puts "Congratulations #{winner}!"
-  else
+  elsif draw?
     puts "Cat's Game!"
   end
 end
-end
+
+ end
