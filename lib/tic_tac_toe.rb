@@ -54,6 +54,7 @@ def turn(board)
     character = current_player
     move(index, character)
   else
-    turn(board)
+    turn
   end
+  display_board
 end
