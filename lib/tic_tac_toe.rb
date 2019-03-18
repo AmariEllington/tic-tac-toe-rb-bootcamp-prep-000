@@ -133,10 +133,14 @@ end
 
 
 # Define your play method below
-def play(board)
-  i = 0
-  while i < 9
-    i += 1
-    turn(board)
+def play
+  until over?
+    turn
   end
+  if won?
+    puts "Congratulations #{winner}!"
+  else
+    puts "Cat's Game!"
+  end
+end
 end
