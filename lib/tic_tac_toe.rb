@@ -40,3 +40,8 @@ end
 def position_taken?(board, index)
   ! (board[index] ==  " " || board[index] == "" || board[index] == nil)
   end
+
+  # code your #valid_move? method here
+def valid_move?(board, index)
+(board[index] ==  " " || board[index] == "" || board[index] == nil) && index.between?(0,8)
+end
